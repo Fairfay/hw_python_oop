@@ -142,7 +142,7 @@ def read_package(workout_type: str, data: list) -> Training:
         'SWM': Swimming,
         'RUN': Running,
         'WLK': SportsWalking,
-        }
+    }
     workout_class = workout_mapping.get(workout_type)
     if not workout_class:
         raise ValueError('Неподдерживаемый тип тренировки: ' + workout_type)
